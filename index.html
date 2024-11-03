@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Generator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="Page_layout">
+        <div class="Header">
+            <h1>Dynamic Resume Generator</h1>
+        </div>
+
+        <div class="form">
+            <form id="Form">
+                <hr>
+                <label for="Name" class="headings">Enter your Name:</label>
+                <input class="Name" id="Name" name="name" placeholder="Enter Name" type="text"><br>
+                <hr>
+
+                <label for="Education" class="headings">Enter your Education:</label>
+                <input class="Name" id="Education" name="education" placeholder="Enter Education" type="text"><br>
+                <hr>
+
+                <label for="Skills" class="headings">Enter your Skills:</label>
+                <div class="Skills_Input" id="SkillsSection">
+                    <input class="Name" name="skills" placeholder="Enter Skills" type="text" id="Skills_Input"><br>
+                    <hr>
+
+                    <label for="Email" class="headings">Enter your Email:</label>
+                    <input class="Name" id="Email" name="email" placeholder="Enter Email" type="email"><br>
+                    <hr>
+
+                    <label for="Phone" class="headings">Enter Phone no:</label>
+                    <input class="Name" id="Phone" name="phone" placeholder="Enter Phone no:" type="number"><br>
+                    <hr>
+
+                    <label for="Address" class="headings">Enter your Address</label>
+                    <input class="Name" id="Address" name="address" placeholder="Enter Address" type="text"><br>
+                    <hr>
+
+                    <label for="file"><b>Profile Picture</b></label>
+                    <input type="file" id="file" name="file-img" style="margin-top: 1rem; color: #230499;">
+                    <hr>
+
+                    <button type="submit" class="btn">Generate Resume</button>
+            </form>
+        </div>
+
+        <div id="Resume_output">
+            <div id="sides">
+                <div class="side_one">
+                    <header id="header-tag">
+                        <img src="" alt="">
+                        <h1 id="display-name"></h1>
+                    </header>
+
+                    <footer>
+                        <div id="footer_box">
+                            <h2>Contact Information</h2>
+                            <p>
+                                <b>Phone:</b> <i id="display-phone"></i><br>
+                                <b>Email:</b> <i id="display-email"></i><br>
+                                <b>Address:</b> <i id="display-address"></i><br>
+                            </p>
+                        </div>
+                    </footer>
+                </div>
+
+                <div class="side_two">
+                    <section>
+                        <div id="Education_box">
+                            <h2>Education</h2>
+                            <p id="display-education"></p>
+                        </div>
+
+                        <div id="Skill_box">
+                            <h2>Skills</h2>
+                            <ul id="display-skills"></ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div>
+                <button id="edit_btn">Edit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
